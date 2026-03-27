@@ -1,0 +1,85 @@
+{
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "about": "About",
+    "markets": "Markets",
+    "blog": "News",
+    "contact": "Contact"
+  },
+  "hero": {
+    "subtitle": "Global Food Trading — Frozen & Chilled Proteins",
+    "headline": "WE MOVE PROTEIN. GLOBALLY.",
+    "cta": "Get in Touch",
+    "scroll": "Scroll to explore"
+  },
+  "about": {
+    "title": "Who We Are",
+    "p1": "With over 25 years of experience in the global protein trade, Natural Trade has established itself as a trusted bridge between producers and markets worldwide.",
+    "p2": "We specialize in sourcing, trading, and delivering premium frozen and chilled proteins — from South America to Africa, Europe, the Middle East, and Asia. Our deep industry knowledge, combined with a vast network of suppliers and buyers, allows us to offer personalized solutions tailored to each client's needs.",
+    "p3": "At Natural Trade, we don't just move products — we build lasting partnerships based on trust, transparency, and excellence."
+  },
+  "value": {
+    "title": "Why Choose Us",
+    "years_title": "25+ Years",
+    "years_desc": "Over two decades of expertise in global protein trading and logistics.",
+    "network_title": "Strong Network",
+    "network_desc": "Deep connections across 4 continents with trusted suppliers and buyers.",
+    "service_title": "Personalized Service",
+    "service_desc": "Dedicated support tailored to your specific business needs and goals."
+  },
+  "products": {
+    "title": "Our Products",
+    "subtitle": "Premium frozen and chilled proteins sourced from trusted producers worldwide.",
+    "beef": "Beef",
+    "pork": "Pork",
+    "poultry": "Poultry",
+    "fish": "Fish",
+    "lamb": "Lamb",
+    "goat": "Goat",
+    "buffalo": "Buffalo",
+    "turkey": "Turkey",
+    "request_quote": "Request Quote",
+    "close": "Close",
+    "learn_more": "Learn More",
+    "modal_desc": "We source premium quality {product} from trusted producers worldwide. Our extensive network ensures consistent supply, competitive pricing, and full traceability across the cold chain."
+  },
+  "markets": {
+    "title": "Global Reach",
+    "subtitle": "Connecting producers with markets across four continents.",
+    "africa": "Africa",
+    "europe": "Europe",
+    "middle_east": "Middle East",
+    "asia": "Asia"
+  },
+  "blog": {
+    "title": "Latest News",
+    "read_more": "Read More",
+    "coming_soon": "Stay tuned for the latest updates from the global protein industry."
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "Your Trusted Global Protein Partner",
+    "name": "Full Name",
+    "company": "Company",
+    "email": "Email Address",
+    "phone": "Phone (optional)",
+    "product_interest": "Product of Interest",
+    "select_product": "Select a product...",
+    "message": "Message",
+    "message_placeholder": "Tell us about your needs...",
+    "description": "Whether you're looking to source premium proteins or explore new markets, our team is ready to help. Reach out and let's start a conversation.",
+    "send": "Send Message",
+    "sending": "Sending...",
+    "success": "Message sent successfully! We'll get back to you shortly.",
+    "error": "Something went wrong. Please try again or email us directly."
+  },
+  "footer": {
+    "tagline": "Your Trusted Global Protein Partner",
+    "quick_links": "Quick Links",
+    "contact_info": "Contact",
+    "rights": "© 2026 Natural Trade SRL. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  }
+}

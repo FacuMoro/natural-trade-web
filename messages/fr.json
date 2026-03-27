@@ -1,0 +1,85 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "products": "Produits",
+    "about": "À Propos",
+    "markets": "Marchés",
+    "blog": "Actualités",
+    "contact": "Contact"
+  },
+  "hero": {
+    "subtitle": "Commerce Alimentaire Mondial — Protéines Surgelées et Réfrigérées",
+    "headline": "NOUS DÉPLAÇONS LES PROTÉINES. MONDIALEMENT.",
+    "cta": "Nous Contacter",
+    "scroll": "Défiler pour explorer"
+  },
+  "about": {
+    "title": "Qui Sommes-Nous",
+    "p1": "Avec plus de 25 ans d'expérience dans le commerce mondial des protéines, Natural Trade s'est imposé comme un pont de confiance entre les producteurs et les marchés du monde entier.",
+    "p2": "Nous sommes spécialisés dans l'approvisionnement, le commerce et la livraison de protéines surgelées et réfrigérées premium — d'Amérique du Sud vers l'Afrique, l'Europe, le Moyen-Orient et l'Asie. Notre connaissance approfondie de l'industrie, combinée à un vaste réseau de fournisseurs et d'acheteurs, nous permet d'offrir des solutions personnalisées adaptées aux besoins de chaque client.",
+    "p3": "Chez Natural Trade, nous ne déplaçons pas simplement des produits — nous construisons des partenariats durables basés sur la confiance, la transparence et l'excellence."
+  },
+  "value": {
+    "title": "Pourquoi Nous Choisir",
+    "years_title": "25+ Ans",
+    "years_desc": "Plus de deux décennies d'expertise dans le commerce mondial des protéines et la logistique.",
+    "network_title": "Réseau Solide",
+    "network_desc": "Des connexions profondes sur 4 continents avec des fournisseurs et acheteurs de confiance.",
+    "service_title": "Service Personnalisé",
+    "service_desc": "Un accompagnement dédié adapté aux besoins spécifiques de votre entreprise."
+  },
+  "products": {
+    "title": "Nos Produits",
+    "subtitle": "Protéines surgelées et réfrigérées premium provenant de producteurs de confiance dans le monde entier.",
+    "beef": "Bœuf",
+    "pork": "Porc",
+    "poultry": "Volaille",
+    "fish": "Poisson",
+    "lamb": "Agneau",
+    "goat": "Chèvre",
+    "buffalo": "Buffle",
+    "turkey": "Dinde",
+    "request_quote": "Demander un Devis",
+    "close": "Fermer",
+    "learn_more": "En Savoir Plus",
+    "modal_desc": "Nous nous approvisionnons en {product} de qualité premium auprès de producteurs de confiance dans le monde entier. Notre vaste réseau garantit un approvisionnement constant, des prix compétitifs et une traçabilité complète tout au long de la chaîne du froid."
+  },
+  "markets": {
+    "title": "Portée Mondiale",
+    "subtitle": "Connecter les producteurs aux marchés sur quatre continents.",
+    "africa": "Afrique",
+    "europe": "Europe",
+    "middle_east": "Moyen-Orient",
+    "asia": "Asie"
+  },
+  "blog": {
+    "title": "Dernières Actualités",
+    "read_more": "Lire la Suite",
+    "coming_soon": "Restez informé des dernières nouvelles de l'industrie mondiale des protéines."
+  },
+  "contact": {
+    "title": "Contactez-Nous",
+    "subtitle": "Votre Partenaire Mondial de Confiance en Protéines",
+    "name": "Nom Complet",
+    "company": "Entreprise",
+    "email": "Adresse E-mail",
+    "phone": "Téléphone (facultatif)",
+    "product_interest": "Produit d'Intérêt",
+    "select_product": "Sélectionnez un produit...",
+    "message": "Message",
+    "message_placeholder": "Parlez-nous de vos besoins...",
+    "description": "Que vous cherchiez à vous approvisionner en protéines premium ou à explorer de nouveaux marchés, notre équipe est prête à vous aider. Contactez-nous et commençons une conversation.",
+    "send": "Envoyer le Message",
+    "sending": "Envoi en cours...",
+    "success": "Message envoyé avec succès ! Nous vous répondrons rapidement.",
+    "error": "Une erreur est survenue. Veuillez réessayer ou nous écrire directement."
+  },
+  "footer": {
+    "tagline": "Votre Partenaire Mondial de Confiance en Protéines",
+    "quick_links": "Liens Rapides",
+    "contact_info": "Contact",
+    "rights": "© 2026 Natural Trade SRL. Tous droits réservés.",
+    "privacy": "Politique de Confidentialité",
+    "terms": "Conditions d'Utilisation"
+  }
+}

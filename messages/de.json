@@ -1,0 +1,85 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "products": "Produkte",
+    "about": "Über Uns",
+    "markets": "Märkte",
+    "blog": "Neuigkeiten",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "subtitle": "Globaler Lebensmittelhandel — Tiefgekühlte und Gekühlte Proteine",
+    "headline": "WIR BEWEGEN PROTEIN. WELTWEIT.",
+    "cta": "Kontaktieren Sie Uns",
+    "scroll": "Scrollen zum Erkunden"
+  },
+  "about": {
+    "title": "Wer Wir Sind",
+    "p1": "Mit über 25 Jahren Erfahrung im globalen Proteinhandel hat sich Natural Trade als vertrauenswürdige Brücke zwischen Produzenten und Märkten weltweit etabliert.",
+    "p2": "Wir sind spezialisiert auf die Beschaffung, den Handel und die Lieferung von tiefgekühlten und gekühlten Premium-Proteinen — von Südamerika nach Afrika, Europa, den Nahen Osten und Asien. Unser tiefes Branchenwissen, kombiniert mit einem umfangreichen Netzwerk von Lieferanten und Käufern, ermöglicht es uns, maßgeschneiderte Lösungen für die Bedürfnisse jedes Kunden anzubieten.",
+    "p3": "Bei Natural Trade bewegen wir nicht nur Produkte — wir bauen dauerhafte Partnerschaften auf, die auf Vertrauen, Transparenz und Exzellenz basieren."
+  },
+  "value": {
+    "title": "Warum Uns Wählen",
+    "years_title": "25+ Jahre",
+    "years_desc": "Über zwei Jahrzehnte Expertise im globalen Proteinhandel und Logistik.",
+    "network_title": "Starkes Netzwerk",
+    "network_desc": "Tiefe Verbindungen auf 4 Kontinenten mit vertrauenswürdigen Lieferanten und Käufern.",
+    "service_title": "Persönlicher Service",
+    "service_desc": "Engagierte Unterstützung, zugeschnitten auf Ihre spezifischen Geschäftsanforderungen."
+  },
+  "products": {
+    "title": "Unsere Produkte",
+    "subtitle": "Premium tiefgekühlte und gekühlte Proteine von vertrauenswürdigen Produzenten weltweit.",
+    "beef": "Rindfleisch",
+    "pork": "Schweinefleisch",
+    "poultry": "Geflügel",
+    "fish": "Fisch",
+    "lamb": "Lamm",
+    "goat": "Ziege",
+    "buffalo": "Büffel",
+    "turkey": "Truthahn",
+    "request_quote": "Angebot Anfordern",
+    "close": "Schließen",
+    "learn_more": "Mehr Erfahren",
+    "modal_desc": "Wir beziehen erstklassiges {product} von vertrauenswürdigen Produzenten weltweit. Unser umfangreiches Netzwerk gewährleistet eine konstante Versorgung, wettbewerbsfähige Preise und vollständige Rückverfolgbarkeit entlang der Kühlkette."
+  },
+  "markets": {
+    "title": "Globale Reichweite",
+    "subtitle": "Produzenten mit Märkten auf vier Kontinenten verbinden.",
+    "africa": "Afrika",
+    "europe": "Europa",
+    "middle_east": "Naher Osten",
+    "asia": "Asien"
+  },
+  "blog": {
+    "title": "Neueste Nachrichten",
+    "read_more": "Weiterlesen",
+    "coming_soon": "Bleiben Sie über die neuesten Entwicklungen der globalen Proteinindustrie informiert."
+  },
+  "contact": {
+    "title": "Kontaktieren Sie Uns",
+    "subtitle": "Ihr Vertrauenswürdiger Globaler Protein-Partner",
+    "name": "Vollständiger Name",
+    "company": "Unternehmen",
+    "email": "E-Mail-Adresse",
+    "phone": "Telefon (optional)",
+    "product_interest": "Produkt von Interesse",
+    "select_product": "Produkt auswählen...",
+    "message": "Nachricht",
+    "message_placeholder": "Erzählen Sie uns von Ihren Anforderungen...",
+    "description": "Ob Sie Premium-Proteine beziehen oder neue Märkte erkunden möchten — unser Team steht bereit, um Ihnen zu helfen. Kontaktieren Sie uns und beginnen wir ein Gespräch.",
+    "send": "Nachricht Senden",
+    "sending": "Wird gesendet...",
+    "success": "Nachricht erfolgreich gesendet! Wir melden uns in Kürze bei Ihnen.",
+    "error": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut oder schreiben Sie uns direkt."
+  },
+  "footer": {
+    "tagline": "Ihr Vertrauenswürdiger Globaler Protein-Partner",
+    "quick_links": "Schnelllinks",
+    "contact_info": "Kontakt",
+    "rights": "© 2026 Natural Trade SRL. Alle Rechte vorbehalten.",
+    "privacy": "Datenschutzrichtlinie",
+    "terms": "Nutzungsbedingungen"
+  }
+}
