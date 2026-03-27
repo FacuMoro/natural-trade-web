@@ -8,7 +8,7 @@
     "contact": "Contacto"
   },
   "hero": {
-    "subtitle": "Comercio Global de Alimentos — Proteínas Congeladas y Refrigeradas",
+    "subtitle": "Comercio Global de Alimentos — Productos Congelados y Refrigerados",
     "headline": "MOVEMOS PROTEÍNA. GLOBALMENTE.",
     "cta": "Contáctenos",
     "scroll": "Desliza para explorar"
@@ -50,7 +50,8 @@
     "africa": "África",
     "europe": "Europa",
     "middle_east": "Medio Oriente",
-    "asia": "Asia"
+    "asia": "Asia",
+    "central_america": "América Central"
   },
   "blog": {
     "title": "Últimas Novedades",

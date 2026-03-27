@@ -6,7 +6,7 @@ import SectionTitle from "../ui/SectionTitle";
 import ScrollReveal from "../ui/ScrollReveal";
 import GlobeVisualization from "./GlobeVisualization";
 
-const MARKET_KEYS = ["africa", "europe", "middle_east", "asia"] as const;
+const MARKET_KEYS = ["africa", "central_america", "europe", "middle_east", "asia"] as const;
 
 export default function GlobalReach() {
   const t = useTranslations("markets");

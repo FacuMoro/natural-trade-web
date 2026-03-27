@@ -8,7 +8,7 @@
     "contact": "Kontakt"
   },
   "hero": {
-    "subtitle": "Globaler Lebensmittelhandel — Tiefgekühlte und Gekühlte Proteine",
+    "subtitle": "Globaler Lebensmittelhandel — Tiefgekühlte und Gekühlte Produkte",
     "headline": "WIR BEWEGEN PROTEIN. WELTWEIT.",
     "cta": "Kontaktieren Sie Uns",
     "scroll": "Scrollen zum Erkunden"
@@ -50,7 +50,8 @@
     "africa": "Afrika",
     "europe": "Europa",
     "middle_east": "Naher Osten",
-    "asia": "Asien"
+    "asia": "Asien",
+    "central_america": "Zentralamerika"
   },
   "blog": {
     "title": "Neueste Nachrichten",

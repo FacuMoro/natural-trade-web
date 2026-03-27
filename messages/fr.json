@@ -8,7 +8,7 @@
     "contact": "Contact"
   },
   "hero": {
-    "subtitle": "Commerce Alimentaire Mondial — Protéines Surgelées et Réfrigérées",
+    "subtitle": "Commerce Alimentaire Mondial — Produits Surgelés et Réfrigérés",
     "headline": "NOUS DÉPLAÇONS LES PROTÉINES. MONDIALEMENT.",
     "cta": "Nous Contacter",
     "scroll": "Défiler pour explorer"
@@ -50,7 +50,8 @@
     "africa": "Afrique",
     "europe": "Europe",
     "middle_east": "Moyen-Orient",
-    "asia": "Asie"
+    "asia": "Asie",
+    "central_america": "Amérique Centrale"
   },
   "blog": {
     "title": "Dernières Actualités",

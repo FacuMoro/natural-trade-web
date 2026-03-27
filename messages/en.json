@@ -8,7 +8,7 @@
     "contact": "Contact"
   },
   "hero": {
-    "subtitle": "Global Food Trading — Frozen & Chilled Proteins",
+    "subtitle": "Global Food Trading — Frozen & Chilled Products",
     "headline": "WE MOVE PROTEIN. GLOBALLY.",
     "cta": "Get in Touch",
     "scroll": "Scroll to explore"
@@ -50,7 +50,8 @@
     "africa": "Africa",
     "europe": "Europe",
     "middle_east": "Middle East",
-    "asia": "Asia"
+    "asia": "Asia",
+    "central_america": "Central America"
   },
   "blog": {
     "title": "Latest News",
