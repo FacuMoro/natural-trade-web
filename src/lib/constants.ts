@@ -19,6 +19,12 @@ export const MARKETS = [
     label: "Africa",
   },
   {
+    id: "central_america",
+    lat: 15,
+    lng: -87,
+    label: "Central America",
+  },
+  {
     id: "europe",
     lat: 50,
     lng: 10,
@@ -37,6 +43,8 @@ export const MARKETS = [
     label: "Asia",
   },
 ] as const;
+
+export type MarketId = (typeof MARKETS)[number]["id"];
 
 export const ORIGIN = { lat: -34.6, lng: -58.4, label: "Argentina" };
 

@@ -1,26 +1,32 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useCallback } from "react";
 import dynamic from "next/dynamic";
 import { MARKETS, ORIGIN } from "@/lib/constants";
+import type { MarketId } from "@/lib/constants";
 
 const Globe = dynamic(() => import("react-globe.gl"), { ssr: false });
+
+const DEFAULT_ALTITUDE = 2.5;
+const ZOOM_ALTITUDE = 1.4;
+const TRANSITION_MS = 800;
 
 const ARCS_DATA = MARKETS.map((market) => ({
   startLat: ORIGIN.lat,
   startLng: ORIGIN.lng,
   endLat: market.lat,
   endLng: market.lng,
+  id: market.id,
   label: market.label,
 }));
 
-const POINTS_DATA = [
-  { lat: ORIGIN.lat, lng: ORIGIN.lng, label: ORIGIN.label, size: 0.6 },
-  ...MARKETS.map((m) => ({ lat: m.lat, lng: m.lng, label: m.label, size: 0.4 })),
-];
+interface GlobeVisualizationProps {
+  hoveredMarket: MarketId | null;
+}
 
-export default function GlobeVisualization() {
+export default function GlobeVisualization({ hoveredMarket }: GlobeVisualizationProps) {
   const containerRef = useRef<HTMLDivElement>(null);
+  const globeRef = useRef<any>(null);
   const [dimensions, setDimensions] = useState({ width: 500, height: 500 });
   const [mounted, setMounted] = useState(false);
 
@@ -37,6 +43,74 @@ export default function GlobeVisualization() {
     return () => window.removeEventListener("resize", updateSize);
   }, []);
 
+  useEffect(() => {
+    if (!globeRef.current) return;
+
+    if (hoveredMarket) {
+      const market = MARKETS.find((m) => m.id === hoveredMarket);
+      if (market) {
+        globeRef.current.pointOfView(
+          { lat: market.lat, lng: market.lng, altitude: ZOOM_ALTITUDE },
+          TRANSITION_MS
+        );
+      }
+    } else {
+      globeRef.current.pointOfView(
+        { lat: ORIGIN.lat, lng: ORIGIN.lng, altitude: DEFAULT_ALTITUDE },
+        TRANSITION_MS
+      );
+    }
+  }, [hoveredMarket]);
+
+  const pointsData = [
+    { lat: ORIGIN.lat, lng: ORIGIN.lng, label: ORIGIN.label, id: "origin", size: 0.6 },
+    ...MARKETS.map((m) => ({ lat: m.lat, lng: m.lng, label: m.label, id: m.id, size: 0.4 })),
+  ];
+
+  const ringsData = hoveredMarket
+    ? MARKETS.filter((m) => m.id === hoveredMarket).map((m) => ({
+        lat: m.lat,
+        lng: m.lng,
+        maxR: 6,
+        propagationSpeed: 2,
+        repeatPeriod: 800,
+      }))
+    : [];
+
+  const getPointColor = useCallback(
+    (point: any) => {
+      if (point.id === "origin") return "#C9A96E";
+      if (hoveredMarket && point.id === hoveredMarket) return "#FFD700";
+      if (hoveredMarket && point.id !== hoveredMarket) return "rgba(201,169,110,0.3)";
+      return "#C9A96E";
+    },
+    [hoveredMarket]
+  );
+
+  const getPointRadius = useCallback(
+    (point: any) => {
+      if (hoveredMarket && point.id === hoveredMarket) return 0.8;
+      return point.size;
+    },
+    [hoveredMarket]
+  );
+
+  const getArcColor = useCallback(
+    (arc: any) => {
+      if (!hoveredMarket) return "#C9A96E";
+      return arc.id === hoveredMarket ? "#FFD700" : "rgba(201,169,110,0.15)";
+    },
+    [hoveredMarket]
+  );
+
+  const getArcStroke = useCallback(
+    (arc: any) => {
+      if (hoveredMarket && arc.id === hoveredMarket) return 1.2;
+      return 0.5;
+    },
+    [hoveredMarket]
+  );
+
   if (!mounted) {
     return (
       <div ref={containerRef} className="w-full flex items-center justify-center" style={{ height: 500 }}>
@@ -48,26 +122,32 @@ export default function GlobeVisualization() {
   return (
     <div ref={containerRef} className="w-full flex items-center justify-center">
       <Globe
+        ref={globeRef}
         width={dimensions.width}
         height={dimensions.height}
         backgroundColor="rgba(0,0,0,0)"
         globeImageUrl="//unpkg.com/three-globe/example/img/earth-dark.jpg"
-        atmosphereColor="#C9A96E"
+        atmosphereColor={hoveredMarket ? "#FFD700" : "#C9A96E"}
         atmosphereAltitude={0.2}
         arcsData={ARCS_DATA}
-        arcColor={() => "#C9A96E"}
-        arcStroke={0.5}
+        arcColor={getArcColor}
+        arcStroke={getArcStroke}
         arcDashLength={0.5}
         arcDashGap={0.3}
-        arcDashAnimateTime={3000}
+        arcDashAnimateTime={hoveredMarket ? 1500 : 3000}
         arcAltitudeAutoScale={0.4}
-        pointsData={POINTS_DATA}
-        pointColor={() => "#C9A96E"}
+        pointsData={pointsData}
+        pointColor={getPointColor}
         pointAltitude={0.01}
-        pointRadius="size"
-        pointsMerge={true}
+        pointRadius={getPointRadius}
+        pointsMerge={false}
+        ringsData={ringsData}
+        ringColor={() => (t: number) => `rgba(255, 215, 0, ${1 - t})`}
+        ringMaxRadius="maxR"
+        ringPropagationSpeed="propagationSpeed"
+        ringRepeatPeriod="repeatPeriod"
         animateIn={true}
-        enablePointerInteraction={true}
+        enablePointerInteraction={false}
       />
     </div>
   );
