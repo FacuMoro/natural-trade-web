@@ -1,0 +1,87 @@
+{
+  "nav": {
+    "home": "首页",
+    "products": "产品",
+    "about": "关于我们",
+    "markets": "市场",
+    "blog": "新闻",
+    "contact": "联系我们"
+  },
+  "hero": {
+    "subtitle": "全球食品贸易 — 冷冻与冷藏产品",
+    "headline": "蛋白质，全球流通。",
+    "cta": "联系我们",
+    "scroll": "向下滚动探索"
+  },
+  "about": {
+    "title": "关于我们",
+    "p1": "凭借超过25年的全球蛋白质贸易经验，Natural Trade已成为连接全球生产商与市场的可信桥梁。",
+    "p2": "我们专注于优质冷冻和冷藏蛋白质的采购、贸易和交付——从南美洲到非洲、欧洲、中东和亚洲。我们深厚的行业知识，结合庞大的供应商和买家网络，使我们能够提供针对每位客户需求量身定制的个性化解决方案。",
+    "p3": "在Natural Trade，我们不仅仅是运输产品——我们建立基于信任、透明和卓越的持久合作伙伴关系。"
+  },
+  "value": {
+    "title": "为何选择我们",
+    "years_title": "25+年",
+    "years_desc": "超过二十年的全球蛋白质贸易和物流专业经验。",
+    "network_title": "强大网络",
+    "network_desc": "与可信赖的供应商和买家在4大洲建立深厚联系。",
+    "service_title": "个性化服务",
+    "service_desc": "根据您的具体业务需求和目标提供专属支持。"
+  },
+  "products": {
+    "title": "我们的产品",
+    "subtitle": "来自全球可信赖生产商的优质冷冻和冷藏蛋白质。",
+    "beef": "牛肉",
+    "pork": "猪肉",
+    "poultry": "禽肉",
+    "fish": "鱼类",
+    "lamb": "羊肉",
+    "goat": "山羊肉",
+    "buffalo": "水牛肉",
+    "turkey": "火鸡肉",
+    "request_quote": "请求报价",
+    "close": "关闭",
+    "learn_more": "了解更多",
+    "modal_desc": "我们从全球可信赖的生产商采购优质{product}。我们广泛的网络确保稳定供应、有竞争力的价格以及冷链全程可追溯性。"
+  },
+  "markets": {
+    "title": "全球覆盖",
+    "subtitle": "连接生产商与四大洲的市场。",
+    "africa": "非洲",
+    "europe": "欧洲",
+    "middle_east": "中东",
+    "asia": "亚洲",
+    "central_america": "中美洲"
+  },
+  "blog": {
+    "title": "最新新闻",
+    "read_more": "阅读更多",
+    "coming_soon": "敬请关注全球蛋白质行业的最新动态。"
+  },
+  "contact": {
+    "title": "联系我们",
+    "subtitle": "您值得信赖的全球蛋白质合作伙伴",
+    "name": "姓名",
+    "company": "公司",
+    "email": "电子邮箱",
+    "phone": "电话（选填）",
+    "product_interest": "感兴趣的产品",
+    "select_product": "选择产品...",
+    "message": "留言",
+    "message_placeholder": "告诉我们您的需求...",
+    "description": "无论您是想采购优质蛋白质还是探索新市场，我们的团队随时准备为您提供帮助。联系我们，开始合作。",
+    "send": "发送消息",
+    "sending": "发送中...",
+    "success": "消息发送成功！我们将尽快回复您。",
+    "error": "出现问题，请重试或直接发送电子邮件联系我们。"
+  },
+  "footer": {
+    "tagline": "您值得信赖的全球蛋白质合作伙伴",
+    "quick_links": "快速链接",
+    "contact_info": "联系方式",
+    "address": "地址",
+    "rights": "© 2026 Natural Trade SRL. 保留所有权利。",
+    "privacy": "隐私政策",
+    "terms": "服务条款"
+  }
+}

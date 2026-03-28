@@ -4,10 +4,10 @@ import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Mail, ExternalLink, CheckCircle, AlertCircle } from "lucide-react";
-import { InstagramIcon, LinkedinIcon } from "../ui/SocialIcons";
+import { Mail, ExternalLink, CheckCircle, AlertCircle, MapPin } from "lucide-react";
+import { LinkedinIcon } from "../ui/SocialIcons";
 import { contactFormSchema, type ContactFormData } from "@/lib/validations";
-import { SOCIAL_LINKS, PRODUCTS } from "@/lib/constants";
+import { SOCIAL_LINKS, PRODUCTS, COMPANY_ADDRESS } from "@/lib/constants";
 import SectionTitle from "../ui/SectionTitle";
 import ScrollReveal from "../ui/ScrollReveal";
 import Button from "../ui/Button";
@@ -181,18 +181,6 @@ export default function ContactSection() {
                 </a>
 
                 <a
-                  href={SOCIAL_LINKS.instagram}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-3 text-cream-muted hover:text-gold transition-colors group"
-                >
-                  <div className="w-10 h-10 rounded-full bg-gold/10 flex items-center justify-center group-hover:bg-gold/20 transition-colors">
-                    <InstagramIcon size={18} className="text-gold" />
-                  </div>
-                  <span>@natural.trade</span>
-                </a>
-
-                <a
                   href={SOCIAL_LINKS.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -215,6 +203,18 @@ export default function ContactSection() {
                   </div>
                   <span>www.naturaltrade.com.ar</span>
                 </a>
+
+                <div className="flex items-start gap-3 text-cream-muted group">
+                  <div className="w-10 h-10 rounded-full bg-gold/10 flex items-center justify-center shrink-0">
+                    <MapPin size={18} className="text-gold" />
+                  </div>
+                  <address className="not-italic text-sm leading-relaxed pt-2">
+                    {COMPANY_ADDRESS.street}<br />
+                    {COMPANY_ADDRESS.floor}<br />
+                    {COMPANY_ADDRESS.postalCode}, {COMPANY_ADDRESS.city}<br />
+                    {COMPANY_ADDRESS.country}
+                  </address>
+                </div>
               </div>
             </div>
           </ScrollReveal>

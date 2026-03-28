@@ -1,0 +1,87 @@
+{
+  "nav": {
+    "home": "Início",
+    "products": "Produtos",
+    "about": "Sobre Nós",
+    "markets": "Mercados",
+    "blog": "Notícias",
+    "contact": "Contato"
+  },
+  "hero": {
+    "subtitle": "Comércio Global de Alimentos — Produtos Congelados e Refrigerados",
+    "headline": "MOVEMOS PROTEÍNA. GLOBALMENTE.",
+    "cta": "Entre em Contato",
+    "scroll": "Role para explorar"
+  },
+  "about": {
+    "title": "Quem Somos",
+    "p1": "Com mais de 25 anos de experiência no comércio global de proteínas, a Natural Trade se consolidou como uma ponte de confiança entre produtores e mercados em todo o mundo.",
+    "p2": "Somos especializados no fornecimento, comercialização e entrega de proteínas congeladas e refrigeradas premium — da América do Sul para a África, Europa, Oriente Médio e Ásia. Nosso profundo conhecimento do setor, combinado com uma vasta rede de fornecedores e compradores, nos permite oferecer soluções personalizadas adaptadas às necessidades de cada cliente.",
+    "p3": "Na Natural Trade, não apenas movemos produtos — construímos parcerias duradouras baseadas em confiança, transparência e excelência."
+  },
+  "value": {
+    "title": "Por Que Nos Escolher",
+    "years_title": "25+ Anos",
+    "years_desc": "Mais de duas décadas de experiência em comércio global de proteínas e logística.",
+    "network_title": "Rede Sólida",
+    "network_desc": "Conexões profundas em 4 continentes com fornecedores e compradores de confiança.",
+    "service_title": "Serviço Personalizado",
+    "service_desc": "Suporte dedicado adaptado às necessidades específicas do seu negócio."
+  },
+  "products": {
+    "title": "Nossos Produtos",
+    "subtitle": "Proteínas congeladas e refrigeradas premium de produtores de confiança em todo o mundo.",
+    "beef": "Carne Bovina",
+    "pork": "Suíno",
+    "poultry": "Aves",
+    "fish": "Peixe",
+    "lamb": "Cordeiro",
+    "goat": "Cabra",
+    "buffalo": "Búfalo",
+    "turkey": "Peru",
+    "request_quote": "Solicitar Cotação",
+    "close": "Fechar",
+    "learn_more": "Saiba Mais",
+    "modal_desc": "Fornecemos {product} de qualidade premium de produtores de confiança em todo o mundo. Nossa extensa rede garante fornecimento constante, preços competitivos e rastreabilidade completa em toda a cadeia de frio."
+  },
+  "markets": {
+    "title": "Alcance Global",
+    "subtitle": "Conectando produtores com mercados em quatro continentes.",
+    "africa": "África",
+    "europe": "Europa",
+    "middle_east": "Oriente Médio",
+    "asia": "Ásia",
+    "central_america": "América Central"
+  },
+  "blog": {
+    "title": "Últimas Notícias",
+    "read_more": "Leia Mais",
+    "coming_soon": "Fique por dentro das últimas novidades da indústria global de proteínas."
+  },
+  "contact": {
+    "title": "Entre em Contato",
+    "subtitle": "Seu Parceiro Global de Confiança em Proteínas",
+    "name": "Nome Completo",
+    "company": "Empresa",
+    "email": "Endereço de E-mail",
+    "phone": "Telefone (opcional)",
+    "product_interest": "Produto de Interesse",
+    "select_product": "Selecione um produto...",
+    "message": "Mensagem",
+    "message_placeholder": "Conte-nos sobre suas necessidades...",
+    "description": "Seja para adquirir proteínas premium ou explorar novos mercados, nossa equipe está pronta para ajudar. Entre em contato e vamos iniciar uma conversa.",
+    "send": "Enviar Mensagem",
+    "sending": "Enviando...",
+    "success": "Mensagem enviada com sucesso! Retornaremos em breve.",
+    "error": "Algo deu errado. Tente novamente ou envie-nos um e-mail diretamente."
+  },
+  "footer": {
+    "tagline": "Seu Parceiro Global de Confiança em Proteínas",
+    "quick_links": "Links Rápidos",
+    "contact_info": "Contato",
+    "address": "Endereço",
+    "rights": "© 2026 Natural Trade SRL. Todos os direitos reservados.",
+    "privacy": "Política de Privacidade",
+    "terms": "Termos de Serviço"
+  }
+}

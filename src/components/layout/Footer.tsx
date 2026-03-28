@@ -2,9 +2,9 @@
 
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { Mail, ExternalLink } from "lucide-react";
-import { InstagramIcon, LinkedinIcon } from "../ui/SocialIcons";
-import { NAV_LINKS, SOCIAL_LINKS } from "@/lib/constants";
+import { Mail, ExternalLink, MapPin } from "lucide-react";
+import { LinkedinIcon } from "../ui/SocialIcons";
+import { NAV_LINKS, SOCIAL_LINKS, COMPANY_ADDRESS } from "@/lib/constants";
 import GoldDivider from "../ui/GoldDivider";
 
 export default function Footer() {
@@ -16,7 +16,7 @@ export default function Footer() {
       <GoldDivider />
 
       <div className="max-w-7xl mx-auto px-6 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           <div>
             <a href="#home" className="inline-block mb-4">
               <Image
@@ -62,15 +62,6 @@ export default function Footer() {
                 {SOCIAL_LINKS.email}
               </a>
               <a
-                href={SOCIAL_LINKS.instagram}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 text-cream-muted hover:text-gold transition-colors text-sm"
-              >
-                <InstagramIcon size={16} />
-                @natural.trade
-              </a>
-              <a
                 href={SOCIAL_LINKS.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -88,6 +79,21 @@ export default function Footer() {
                 <ExternalLink size={16} />
                 www.naturaltrade.com.ar
               </a>
+            </div>
+          </div>
+
+          <div>
+            <h4 className="text-gold font-semibold uppercase tracking-wider text-sm mb-6">
+              {t("address")}
+            </h4>
+            <div className="flex gap-2 text-cream-muted text-sm">
+              <MapPin size={16} className="text-gold shrink-0 mt-0.5" />
+              <address className="not-italic leading-relaxed">
+                {COMPANY_ADDRESS.street}<br />
+                {COMPANY_ADDRESS.floor}<br />
+                {COMPANY_ADDRESS.postalCode}, {COMPANY_ADDRESS.city}<br />
+                {COMPANY_ADDRESS.country}
+              </address>
             </div>
           </div>
         </div>

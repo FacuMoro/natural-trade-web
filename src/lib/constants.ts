@@ -58,10 +58,17 @@ export const NAV_LINKS = [
 ] as const;
 
 export const SOCIAL_LINKS = {
-  instagram: "https://www.instagram.com/natural.trade",
   linkedin: "https://www.linkedin.com/company/natural-trade-srl",
   email: "ms@naturaltrade.com.ar",
   website: "https://www.naturaltrade.com.ar",
+} as const;
+
+export const COMPANY_ADDRESS = {
+  street: "Alicia Moreau de Justo 1848",
+  floor: "4th Floor, Office 25",
+  postalCode: "C1107AFB",
+  city: "Buenos Aires",
+  country: "Argentina",
 } as const;
 
 export const TICKER_ITEMS = [

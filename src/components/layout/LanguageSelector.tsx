@@ -3,21 +3,15 @@
 import { useLocale } from "next-intl";
 import { useRouter, usePathname } from "next/navigation";
 import { useState, useRef, useEffect } from "react";
-import { ChevronDown, Globe } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 import { routing, type Locale } from "@/i18n/routing";
 
-const LOCALE_LABELS: Record<Locale, string> = {
-  en: "EN",
-  es: "ES",
-  fr: "FR",
-  de: "DE",
-};
-
-const LOCALE_FULL_LABELS: Record<Locale, string> = {
-  en: "English",
-  es: "Español",
-  fr: "Français",
-  de: "Deutsch",
+const LOCALE_CONFIG: Record<Locale, { label: string; flag: string; name: string }> = {
+  en: { label: "EN", flag: "🇺🇸", name: "English" },
+  es: { label: "ES", flag: "🇦🇷", name: "Español" },
+  fr: { label: "FR", flag: "🇫🇷", name: "Français" },
+  pt: { label: "PT", flag: "🇧🇷", name: "Português" },
+  zh: { label: "ZH", flag: "🇨🇳", name: "中文" },
 };
 
 export default function LanguageSelector() {
@@ -44,6 +38,8 @@ export default function LanguageSelector() {
     setIsOpen(false);
   }
 
+  const current = LOCALE_CONFIG[locale];
+
   return (
     <div ref={ref} className="relative">
       <button
@@ -51,8 +47,8 @@ export default function LanguageSelector() {
         className="flex items-center gap-1.5 text-cream-muted hover:text-gold transition-colors text-sm uppercase tracking-wider cursor-pointer"
         aria-label="Select language"
       >
-        <Globe size={16} />
-        <span>{LOCALE_LABELS[locale]}</span>
+        <span className="text-base leading-none">{current.flag}</span>
+        <span>{current.label}</span>
         <ChevronDown
           size={14}
           className={`transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`}
@@ -60,21 +56,25 @@ export default function LanguageSelector() {
       </button>
 
       {isOpen && (
-        <div className="absolute right-0 top-full mt-2 bg-bg-card border border-border-gold rounded-md shadow-lg overflow-hidden min-w-[140px] z-50">
-          {routing.locales.map((loc) => (
-            <button
-              key={loc}
-              onClick={() => switchLocale(loc)}
-              className={`w-full px-4 py-2.5 text-left text-sm transition-colors cursor-pointer flex items-center justify-between ${
-                loc === locale
-                  ? "text-gold bg-gold/10"
-                  : "text-cream-muted hover:text-cream hover:bg-white/5"
-              }`}
-            >
-              <span>{LOCALE_FULL_LABELS[loc]}</span>
-              <span className="text-xs opacity-50">{LOCALE_LABELS[loc]}</span>
-            </button>
-          ))}
+        <div className="absolute right-0 top-full mt-2 bg-bg-card border border-border-gold rounded-md shadow-lg overflow-hidden min-w-[160px] z-50">
+          {routing.locales.map((loc) => {
+            const config = LOCALE_CONFIG[loc];
+            return (
+              <button
+                key={loc}
+                onClick={() => switchLocale(loc)}
+                className={`w-full px-4 py-2.5 text-left text-sm transition-colors cursor-pointer flex items-center gap-3 ${
+                  loc === locale
+                    ? "text-gold bg-gold/10"
+                    : "text-cream-muted hover:text-cream hover:bg-white/5"
+                }`}
+              >
+                <span className="text-base leading-none">{config.flag}</span>
+                <span>{config.name}</span>
+                <span className="text-xs opacity-50 ml-auto">{config.label}</span>
+              </button>
+            );
+          })}
         </div>
       )}
     </div>
