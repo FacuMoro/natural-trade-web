@@ -1,13 +1,12 @@
 "use client";
 
-import { useState } from "react";
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import Link from "next/link";
+import { useLocale, useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import { PRODUCTS, type ProductId } from "@/lib/constants";
 import SectionTitle from "../ui/SectionTitle";
 import ScrollReveal from "../ui/ScrollReveal";
-import ProductModal from "./ProductModal";
 
 const PRODUCT_GRADIENTS: Record<ProductId, string> = {
   beef: "from-red-900/60 to-bg-card",
@@ -22,7 +21,7 @@ const PRODUCT_GRADIENTS: Record<ProductId, string> = {
 
 export default function ProductsSection() {
   const t = useTranslations("products");
-  const [selectedProduct, setSelectedProduct] = useState<ProductId | null>(null);
+  const locale = useLocale();
 
   return (
     <section id="products" className="py-24 md:py-32 bg-bg-primary">
@@ -32,29 +31,31 @@ export default function ProductsSection() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
           {PRODUCTS.map((product, i) => (
             <ScrollReveal key={product.id} delay={i * 0.08}>
-              <motion.button
-                onClick={() => setSelectedProduct(product.id)}
-                className="relative w-full aspect-square rounded-lg overflow-hidden cursor-pointer border border-border-gold group"
-                whileHover={{ scale: 1.03 }}
-                transition={{ duration: 0.3 }}
-              >
-                <Image
-                  src={product.icon}
-                  alt={t(product.id)}
-                  fill
-                  className="object-contain p-2 group-hover:scale-105 transition-transform duration-300"
-                />
-                <div className="absolute bottom-0 left-0 right-0 h-1 bg-gold scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
-              </motion.button>
+              <Link href={`/${locale}/products/${product.id}`}>
+                <motion.div
+                  className="relative w-full aspect-square rounded-lg overflow-hidden cursor-pointer border border-border-gold group"
+                  whileHover={{ scale: 1.03 }}
+                  transition={{ duration: 0.3 }}
+                >
+                  <Image
+                    src={product.icon}
+                    alt={t(product.id)}
+                    fill
+                    className="object-contain p-2 group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <div className="absolute bottom-0 left-0 right-0 p-3 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <span className="text-gold text-xs font-semibold uppercase tracking-wider">
+                      {t("view_cuts")}
+                    </span>
+                  </div>
+                  <div className="absolute bottom-0 left-0 right-0 h-1 bg-gold scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
+                </motion.div>
+              </Link>
             </ScrollReveal>
           ))}
         </div>
       </div>
-
-      <ProductModal
-        productId={selectedProduct}
-        onClose={() => setSelectedProduct(null)}
-      />
     </section>
   );
 }
