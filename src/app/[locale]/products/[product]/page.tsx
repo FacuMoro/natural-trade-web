@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import { getTranslations } from "next-intl/server";
 import { PRODUCTS, type ProductId } from "@/lib/constants";
 import { CUTS } from "@/lib/cuts";
+import { routing } from "@/i18n/routing";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import ProductCutsPage from "@/components/sections/ProductCutsPage";
@@ -14,7 +15,9 @@ interface Props {
 }
 
 export async function generateStaticParams() {
-  return PRODUCTS.map((p) => ({ product: p.id }));
+  return routing.locales.flatMap((locale) =>
+    PRODUCTS.map((p) => ({ locale, product: p.id }))
+  );
 }
 
 export async function generateMetadata({ params }: Props) {
