@@ -24,7 +24,7 @@ export default function CutCard({ name, image, noImageLabel, scientificName }: C
         <div className="absolute inset-0 rounded-full border-[3px] border-gold/70 group-hover:border-gold transition-colors duration-300" />
 
         <div className="absolute inset-[6px] rounded-full bg-white overflow-hidden flex items-center justify-center">
-          {!imgError ? (
+          {image && !imgError ? (
             <Image
               src={image}
               alt={name}
